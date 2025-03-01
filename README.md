@@ -3,7 +3,7 @@
 ## Project Overview
 This project explores reinforcement learning (RL) techniques for optimizing decision-making in an electricity market environment. Our agent represents a market player equipped with battery storage, aiming to maximize profit by strategically managing charging, discharging, and electricity selling based on fluctuating market conditions.
 
-We implemented a custom Gymnasium environment called `ElectricityMarketEnv`, modeling realistic market dynamics, including stochastic electricity pricing and energy demand patterns. Various RL algorithms were evaluated, with PPO emerging as the most effective, especially when combined with ensemble learning.
+We implemented a custom Gymnasium environment called `ElectricityMarketEnv`, modeling realistic market dynamics, including stochastic electricity pricing and energy demand patterns. Various RL algorithms were evaluated, with PPO turning out to be the most effective, especially when combined with ensemble methods.
 
 ## Features
 - Custom RL Environment Models an electricity market with battery storage.
@@ -39,7 +39,7 @@ The agent observes six state variables
 - Market Noise Incorporated to introduce variability.
 
 ## Reinforcement Learning Experiments
-### Algorithms Implemented
+### Compared Algorithms 
 - Proximal Policy Optimization (PPO)
 - Deep Deterministic Policy Gradient (DDPG)
 - Twin Delayed DDPG (TD3)
@@ -55,7 +55,7 @@ The agent observes six state variables
 ## Repository Structure
 - code Contains the main reinforcement learning algorithms and model training scripts.
 - env Implements the custom Gymnasium environment used for training.
-- presentation Includes presentation materials summarizing the project.
+- presentation Includes presentation that was prsented in the project video
 - simulation Contains simulation scripts for testing trained models in different scenarios.
 - trained_models Stores saved models after training.
 - training_logs Logs and TensorBoard files for monitoring training progress.
@@ -67,30 +67,8 @@ The agent observes six state variables
 - Comparison_between_separate_model_for_each_season.ipynb Evaluates whether training a separate model for each season improves performance.
 - investigating_results_with_reliable.ipynb Analyzes the reliability and consistency of the trained models.
 - PPO_Ensemble.ipynb Implements and evaluates ensemble learning with PPO.
-- transfer_learning.ipynb Examines the feasibility of transfer learning between different environments.
+- transfer_learning.ipynb Contains transfer learning atempts from different environments.
 
-## Installation
-1. Clone this repository
-   ```bash
-   git clone httpsgithub.comyour-repo-name.git
-   cd your-repo-name
-   ```
-2. Install dependencies
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run training
-   ```bash
-   python train.py
-   ```
-
-## Usage
-- Modify `config.json` to change hyperparameters and environment settings.
-- Use `evaluate.py` to test trained models.
-- Visualize results using TensorBoard
-  ```bash
-  tensorboard --logdir=runs
-  ```
 
 ## Future Work
 - Introduce multi-agent RL for competitive market dynamics.
@@ -98,8 +76,6 @@ The agent observes six state variables
 - Explore meta-learning to enhance adaptability.
 
 ## Authors
-- Hussein Rayan (323116319)
+- Hussein Rayan 
 - Alina Sudakov
 
-## License
-This project is licensed under the MIT License.
